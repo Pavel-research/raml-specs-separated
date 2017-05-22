@@ -11,13 +11,13 @@ It was initially developed in the context of RAML 1.0 by MuleSoft, but given its
 
 ### Summary
 
-Alternative to JSON Schema and XML Schema
-"Feels like" object oriented programming
-Allows you to test the validity of XML, YAML and JSON documents
-Concise syntax
-Can be serialized as JSON and YAML
-Can be inlined in JSON and YAML documents
-Designed with convenience in mind
+ * Alternative to JSON Schema and XML Schema
+ * "Feels like" object oriented programming
+ * Allows you to test the validity of XML, YAML and JSON documents
+ * Concise syntax
+ * Can be serialized as JSON and YAML
+ * Can be inlined in JSON and YAML documents
+ * Designed with convenience in mind
 
 
 SDS lets you define Types ( aka Interfaces, Structs, Classes ) that describe the structure ( properties ) of your data. SDS-aware tooling can then use this information to verify that your data is structurally valid.
