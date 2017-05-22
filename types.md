@@ -1,8 +1,26 @@
-# RAML Version 1.0: RESTful API Modeling Language
+# RAML Types Version 1.0: 
 
 ## Abstract
 
-RAML is a language for the definition of HTTP-based APIs that embody most or all of the principles of Representational State Transfer (REST). This document constitutes the RAML specification, an application of the [YAML 1.2 specification](http://yaml.org/spec/1.2/spec.html). The RAML specification provides mechanisms for defining practically-RESTful APIs, creating client/server source code, and comprehensively documenting the APIs for users.
+RAML Types is a concise standard to describe data structures. It is a replacement for, and interoperates with, JSON Schema and XSD.
+
+It was initially developed in the context of RAML 1.0 by MuleSoft, but given its general applicability it was extracted into its own separate specification.
+
+
+## Introduction 
+
+### Summary
+
+Alternative to JSON Schema and XML Schema
+"Feels like" object oriented programming
+Allows you to test the validity of XML, YAML and JSON documents
+Concise syntax
+Can be serialized as JSON and YAML
+Can be inlined in JSON and YAML documents
+Designed with convenience in mind
+
+
+SDS lets you define Types ( aka Interfaces, Structs, Classes ) that describe the structure ( properties ) of your data. SDS-aware tooling can then use this information to verify that your data is structurally valid.
 
 ## Status of this Document
 
