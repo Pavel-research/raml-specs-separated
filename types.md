@@ -35,12 +35,6 @@ A **resource** is the conceptual mapping to an entity or set of entities.
 
 A trailing question mark, for example **description?**, indicates an optional property.
 
-### Template URI
-
-A template URI refers to a URI parameter, which is a variable element, enclosed in curly brackets ({}) inside a relative URI of a resource.
-
-RAML fully supports Level 2 as defined in [RFC6570](https://tools.ietf.org/html/rfc6570) for URI Templates.
-
 ### Markdown
 
 Throughout this specification, **Markdown** means [GitHub-Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
@@ -108,21 +102,6 @@ Throughout this specification, **Markdown** means [GitHub-Flavored Markdown](htt
 This specification describes the Raml Datatypes Language (RDL). RAML is a human- and machine-readable language for the definition of a RESTful application programming interface (API). RAML is designed to improve the specification of the API by providing a format that the API provider and API consumers can use as a mutual contract. RAML can, for example, facilitate providing user documentation and source code stubs for client and server implementations. Such provisions streamline and enhance the definition and development of interoperable applications that utilize RESTful APIs.
 
 RAML introduces the innovative concept of resource types and traits for characterizing and reusing patterns of resources and associated methods. Using resource types and traits minimizes the repetition in a RESTful API design and promotes consistency within and across APIs.
-
-## What's New and Different in RAML 1.0
-
-* **Data types**: a unified, streamlined, and powerful way to model data wherever it appears in an API.
-  * Uniformly covers bodies, URI parameters, headers, and query parameters and eliminates the need for a separate formParameters construct
-  * Supports wrapping XML Schema and JSON Schema and even referring to sub-schemas, but in many cases just obviates the schemas
-  * Simplifies coding, compared to the JSON Schema or XML Schema, by virtue of being YAML-based
-* **Examples**: multiple examples, expressible in YAML, and annotatable, so semantics can be injected
-* **Annotations**: a tried-and-tested, strongly-typed mechanism for extensibility
-* **Libraries**: improved modularity for broad reuse of API artifacts
-* **Overlays** and **Extensions**: increased extensibility through separated files
-* **Improved Security Schemes**:
-  * Wider OAuth support
-  * Support for pass-through (key-based) security schemes
-* **Several smaller changes** for consistency and expressivity
 
 ## Markup Language
 
