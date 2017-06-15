@@ -17,6 +17,11 @@ We are differentiating two forms of the fragment usage - internal fragment and r
 Your dialect may define a set of `top level` properties, with a domain referencing to `PublicFragment` this properties should be optional and may only be used when `Fragment` is used in the root role. 
 
 ## Fragment resolution
+When fragment is used in the root role. Content of the file defining a fragment instance may start from fragment identifier line, which consists of the text #%(DIALECT SHORT NAME) followed left-to-right by a single space, the text (DIALECT VERSION), a single space, and one of the names of the `public fragments` defined in the language.
+
+If file begins with a fragment identifier line, the contents of the file after removal of the fragment identifier line MUST be valid structurally according to the relevant fragment definition. 
+
+For example, a RAML file beginning with #%RAML 1.0 Trait must have the structure of a RAML trait declaration as defined in the Resource Types and Traits section.
 
 ## Highlevel parsing process
 
