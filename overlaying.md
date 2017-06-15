@@ -90,9 +90,9 @@ annotationTypes:
 
 #### Extensions
 
-An extension broadens a RAML API definition by adding to, or modifying aspects of its behavior and other functionality. An extension can be useful in separating a core, broadly-available API from layers of functionality available to more restricted audiences, for creating variants of an API for somewhat different purposes, or for specifying instance-specific nodes of an API, such as its service endpoint (URL) without altering its pure interface definition document.
+An extension broadens a specification definition by adding to, or modifying aspects of its behavior and other functionality. An extension can be useful in separating a core, broadly-available specofication from layers of functionality available to more restricted audiences, for creating variants of an specification for somewhat different purposes, or for specifying instance-specific nodes of an specification, such as its service endpoint (URL) without altering its pure interface definition document.
 
-The following examples build on examples in the Overlays section by adding an extension for admins to add book items to a collection, adding an overlay to provide a translation of the added functionality, and adding an extension that locates a particular service endpoint of the API.
+The following examples using RAML 1.0 language build on examples in the Overlays section by adding an extension for admins to add book items to a collection, adding an overlay to provide a translation of the added functionality, and adding an extension that locates a particular service endpoint of the API.
 
 ```yaml
 #%RAML 1.0 Extension
@@ -266,8 +266,6 @@ For each **Current Extension Tree Object property** the following is done:
 * If the **property** with the same name does not exist in **Current Target Tree Object**:
   * All _Conflicting Properties_ are removed from the **Current Target Tree Object**
   * The **property** is added to the **Current Target Tree Object**.
-
-Traits and Resource Types applications are applied one more time to the _Target Tree_.
 
 _Target Tree_ is validated.
 
