@@ -6,7 +6,7 @@ The following table describes the nodes, which are optional, of a library node.
 
 |Name | Description |
 |:--------|:------------|
-| properties describing declaration of the entities (with respect to the target specification languages) | The definition of each node is the same as that of the corresponding node at the root of a RAML document. Also any annotation like nodes are allowed.
+| properties describing declaration of the entities (with respect to the target specification languages) | The definition of each node . Also any annotation like nodes are allowed.
 | usage | Describes the content or purpose of a specific library. The value is a string and MAY be formatted using [markdown](#markdown).
 
 The following example shows a simple library as a standalone, reusable RAML specification fragment document.
