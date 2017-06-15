@@ -32,18 +32,7 @@ It is difficult to draw a definitive line between the behavioral and implementat
 
 Some specification languages does, however, define the specific behavior-invariance restrictions on overlay files that processors MUST follow. Processors can then choose to offer the master specification definition as well as its modifications after applying one or more overlays, so the consumer can benefit from all the information available. For example, if overlay files are provided as a means of localizing textual descriptions of resources, methods, and data, the consumer of generated documentation can be offered a choice of which localized overlays to apply.
 
-The behavior-invariance restrictions of an overlay are defined as follows: after applying the [merging algorithm](#merging-rules) as well as application of resource types and traits, the tree of nodes in the merged document is compared with the tree of nodes in the master YAML document after resolving all modularization related things. Any differences in the documents MUST be only in the nodes listed in the following table.
-
-|Name | Allowed differences |
-|:--------|:------------|
-| title<br>displayName<br>description<br>documentation<br>usage<br>example | The merged tree can include new nodes of this type or nodes with different values from those in the master tree.
-| types | In addition to allowed differences described elsewhere in this table, the merged tree can also include new data types.
-| annotationTypes | The merged tree can include new annotation types or new values for existing annotation types, as long as all annotations in the merged specification definition validate against the annotation types in the merged tree.
-| any annotation node | The merged tree can include new annotations of annotation types declared in the merged tree, or annotations with different values from those in the master tree.
-| examples | The merged tree can contain new named examples, or named examples with different values from those in the master tree.
-| documentation | The merged tree can contain new items in the array that is the value of the documentation root-level node. To change existing items, the documentation node itself can be overridden in the overlay.
-
-The following example illustrates a very simple RAML definition of a library books API, along with overlay files that provide a Spanish translation and metadata for an API monitoring service.
+The behavior-invariance restrictions of an overlay are defined as follows: after applying the [merging algorithm](#merging-rules) as well as application of resource types and traits, the tree of nodes in the merged document is compared with the tree of nodes in the master YAML document after resolving all modularization related things. Any differences in the documents MUST be only in the informative nodes.
 
 ```yaml
 #%RAML 1.0
