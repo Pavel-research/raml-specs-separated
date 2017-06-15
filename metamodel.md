@@ -21,7 +21,7 @@ When fragment is used in the root role. Content of the file defining a fragment 
 
 If file begins with a fragment identifier line, the contents of the file after removal of the fragment identifier line MUST be valid structurally according to the relevant fragment definition. 
 
-For example, a RAML file beginning with #%RAML 1.0 Trait must have the structure of a RAML trait declaration as defined in the Resource Types and Traits section.
+For example, a RAML file beginning with `#%RAML 1.0 Trait` must have the structure of a RAML trait declaration as defined in the Resource Types and Traits section.
 
 ## Highlevel parsing process
 
