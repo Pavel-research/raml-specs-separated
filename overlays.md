@@ -7,11 +7,11 @@ overlays and extensions.
 
 Overlays and extensions are document fragments that add or override nodes of a specification definition. 
 
-An overlay or extension document MUST contain a root-level `extends` node whose value MUST be the location of a valid specification definition or another overlay or extension; the location specification is an absolute or relative path, or a URL, equivalent to an [!include tag argument](#includes). The document specified in the `extends` node is called the master RAML document.
+An overlay or extension document MUST contain a root-level `extends` node whose value MUST be the location of a valid specification definition or another overlay or extension; the location specification is an absolute or relative path, or a URL, equivalent to an [!include tag argument](#includes). The document specified in the `extends` node is called the master  document.
 
 The remainder of an overlay or extension document follows the same rules as a original specification definition, but with certain [restrictions](#overlays) in case of an overlay.
 
-To apply an overlay or extension, specifications processors MUST apply the [merging algorithm](#merging-rules) to the master RAML document and the extension or overlay, thereby producing a modified specification definition; in the case of applying an overlay, the modified API definition is then validated against the master document to adhere to the restrictions on overlays.
+To apply an overlay or extension, specifications processors MUST apply the [merging algorithm](#merging-rules) to the master  document and the extension or overlay, thereby producing a modified specification definition; in the case of applying an overlay, the modified API definition is then validated against the master document to adhere to the restrictions on overlays.
 
 To apply any combination of overlays and/or extensions, all must share the same master specification document. The application process is:
 
