@@ -7,6 +7,8 @@ Each `Fragment` has a set of the `properties` which are allowed to be met in its
 We are splitting properties in following conceptual classes: 
  * `object properties`  - properties whose range is a type describing a `Fragment`.
  * `scalar properties`  - properties whose range is a scalar data type.
+ 
+ property values may have annotations associated with it.
 
 We use RAML Types to define shape(structure) of the `Fragments`. Some of fragments and properties may have additional semantic validation associated with them. 
 
@@ -31,9 +33,8 @@ We split parsing of the document in the following stages:
  * `fragment resolution` - at this moment parser should decide what kind of the fragment is being parsed.
  * `structure resolution`  - on this stage initial object structure is built.
  * `template resolution` - on this stage parser should resolve and apply all template fragments relevant to the parsed document
+ * `meta compression` - at this moment scalars encoded as objects should be converted to plain scalars.
  * `extension` - if parsed fragment is a sub type of `ExtensionFragment` on this stage parser should transform object structure one more time, by merging it on top of extended document object structure.
  * `shape validation` - finally parser should perform structural and semantic validation of resulting object structure according to the rules of the fragment being parsed
 
-###
 
-Nodes.
