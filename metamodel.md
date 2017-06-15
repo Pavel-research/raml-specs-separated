@@ -23,9 +23,16 @@ If file begins with a fragment identifier line, the contents of the file after r
 
 For example, a RAML file beginning with `#%RAML 1.0 Trait` must have the structure of a RAML trait declaration as defined in the Resource Types and Traits section.
 
+**Do we need global namespaces and language resolution mechanism, I beleive yes**
+
 ## Highlevel parsing process
 
-Node.
+We split parsing of the document in the following stages:
+ * `fragment resolution` - at this moment parser should decide what kind of the fragment is being parsed.
+ * `structure resolution`  - on this stage initial object structure is built.
+ * `template resolution` - on this stage parser should resolve and apply all template fragments relevant to the parsed document
+ * `extension` - if parsed fragment is a sub type of `ExtensionFragment` on this stage parser should transform object structure one more time, by merging it on top of extended document object structure.
+ * `shape validation` - finally parser should perform structural and semantic validation of resulting object structure according to the rules of the fragment being parsed
 
 ###
 
