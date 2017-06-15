@@ -5,18 +5,18 @@ Extending an YAML definition by adding to its behavior, or overriding certain as
 is another way to satisfy different needs. RAML provides two mechanisms for extending API definitions:
 overlays and extensions.
 
-Overlays and extensions are RAML documents that add or override nodes of a RAML API definition. 
+Overlays and extensions are RAML documents that add or override nodes of a specification definition. 
 
-An overlay or extension document MUST contain a root-level `extends` node whose value MUST be the location of a valid RAML API definition or another overlay or extension; the location specification is an absolute or relative path, or a URL, equivalent to an [!include tag argument](#includes). The document specified in the `extends` node is called the master RAML document.
+An overlay or extension document MUST contain a root-level `extends` node whose value MUST be the location of a valid specification definition or another overlay or extension; the location specification is an absolute or relative path, or a URL, equivalent to an [!include tag argument](#includes). The document specified in the `extends` node is called the master RAML document.
 
-The remainder of an overlay or extension document follows the same rules as a RAML API definition, but with certain [restrictions](#overlays) in case of an overlay.
+The remainder of an overlay or extension document follows the same rules as a original specification definition, but with certain [restrictions](#overlays) in case of an overlay.
 
-To apply an overlay or extension, RAML processors MUST apply the [merging algorithm](#merging-rules) to the master RAML document and the extension or overlay, thereby producing a modified API definition; in the case of applying an overlay, the modified API definition is then validated against the master RAML document to adhere to the restrictions on overlays.
+To apply an overlay or extension, specifications processors MUST apply the [merging algorithm](#merging-rules) to the master RAML document and the extension or overlay, thereby producing a modified API definition; in the case of applying an overlay, the modified API definition is then validated against the master RAML document to adhere to the restrictions on overlays.
 
-To apply any combination of overlays and/or extensions, all must share the same master RAML document. The application process is:
+To apply any combination of overlays and/or extensions, all must share the same master specification document. The application process is:
 
-1. Apply the first overlay or extension to the master RAML document, producing a modified API definition and validating the result in the case of an overlay.
-2. Apply the second overlay or extension to the modified API definition as if the latter were the master RAML document, and again validate the result in the case of an overlay.
+1. Apply the first overlay or extension to the master specification document, producing a modified specification definition and validating the result in the case of an overlay.
+2. Apply the second overlay or extension to the modified specification definition as if the latter were the master specification document, and again validate the result in the case of an overlay.
 3. Repeat the previous step until the last overlay or extension is applied.
 4. Resolve all !include tags before any application of the merging algorithm, validate restrictions on overlays after each overlay is applied, and apply all inheritances of types, resource types, traits, and annotation types.
 
