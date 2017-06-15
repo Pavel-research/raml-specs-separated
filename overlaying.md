@@ -5,7 +5,9 @@ Extending an YAML definition by adding to its behavior, or overriding certain as
 is another way to satisfy different needs. RAML provides two mechanisms for extending API definitions:
 overlays and extensions.
 
-Overlays and extensions are RAML documents that add or override nodes of a RAML API definition. The first line of an overlay or extension document MUST begin with the text _#%RAML 1.0 Overlay_ or _#%RAML 1.0 Extension_, respectively, followed by nothing but the end of the line. An overlay or extension document MUST contain a root-level `extends` node whose value MUST be the location of a valid RAML API definition or another overlay or extension; the location specification is an absolute or relative path, or a URL, equivalent to an [!include tag argument](#includes). The document specified in the `extends` node is called the master RAML document.
+Overlays and extensions are RAML documents that add or override nodes of a RAML API definition. 
+
+An overlay or extension document MUST contain a root-level `extends` node whose value MUST be the location of a valid RAML API definition or another overlay or extension; the location specification is an absolute or relative path, or a URL, equivalent to an [!include tag argument](#includes). The document specified in the `extends` node is called the master RAML document.
 
 The remainder of an overlay or extension document follows the same rules as a RAML API definition, but with certain [restrictions](#overlays) in case of an overlay.
 
