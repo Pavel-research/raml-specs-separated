@@ -264,7 +264,7 @@ For each **Current Extension Tree Object property** the following is done:
 
 _Target Tree_ is validated.
 
-If the _Extension Tree_ is an Overlay, _Target Tree_ is compared to the _Master Tree_. There MUST NOT be any differences, other than those listed in the "Allowed differences" table in the [Overlays](#overlays) section. Otherwise the process is cancelled.
+If the _Extension Tree_ is an Overlay, _Target Tree_ is compared to the _Master Tree_. There MUST NOT be any differences, except of the differences in informative nodes. Otherwise the process is cancelled.
 
 _Target Tree_ has its resource types and Traits applied.
 
