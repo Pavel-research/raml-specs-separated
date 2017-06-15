@@ -1,15 +1,6 @@
-## Modularization
-
-RAML provides several mechanisms to help modularize the ecosystem of an API specification:
-* Includes
-* Libraries
-* Overlays
-* Extensions
-
-
 ### Libraries
 
-RAML libraries are used to combine any collection of data type declarations, resource type declarations, trait declarations, and security scheme declarations into modular, externalized, reusable groups. While libraries are intended to define common declarations in external documents, which are then included where needed, libraries can also be defined inline.
+Libraries are used to combine any collection of data type declarations, resource type declarations, trait declarations, and security scheme declarations into modular, externalized, reusable groups. While libraries are intended to define common declarations in external documents, which are then included where needed, libraries can also be defined inline.
 
 The following table describes the nodes, which are optional, of a library node.
 
