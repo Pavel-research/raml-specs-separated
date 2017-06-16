@@ -68,7 +68,7 @@ This specification uses default [RAML dialects markup](markup.md)
 
 ## Defining a garage
 
-The following table enumerates the possible nodes at the root of a Vehicles document:
+The following table enumerates the possible nodes at the root of the Garage:
 
 | Name  | Description |
 |:----------|:----------|
@@ -83,6 +83,29 @@ The following table enumerates the possible nodes at the root of a Vehicles docu
 | uses? | Imported external [libraries](#libraries) for use within the garage.
 
 ## Vehicle types
+
+The following table enumerates the possible nodes defining a vehicle type:
+
+
+| Name  | Description |
+|:----------|:----------|
+| title | A short, plain-text label for the vehicle type. Its value is a string.
+| description? | A substantial, human-friendly description of the vehicle type. Its value is a string and MAY be formatted using [markdown](#markdown).
+| producer? | The producer of the vehicle type.
+| (&lt;annotationName&gt;)? | [Annotations](annotationd.md#annotations) to be applied to this API. An annotation is a map having a key that begins with "(" and ends with ")" where the text enclosed in parentheses is the annotation name, and the value is an instance of that annotation.
+
+## Vehicles
+
+The following table enumerates the possible nodes defining a vehicle :
+
+
+| Name  | Description |
+|:----------|:----------|
+| title | A short, plain-text label for the vehicle.
+| description? | A substantial, human-friendly description of the vehicle).
+| type | The reference to vehicle type.
+| (&lt;annotationName&gt;)? | [Annotations](annotationd.md#annotations) to be applied to this API. An annotation is a map having a key that begins with "(" and ends with ")" where the text enclosed in parentheses is the annotation name, and the value is an instance of that annotation.
+
 
 ## Modularization
 
@@ -99,7 +122,7 @@ Garage raml dialect supports Libraries to define reusable collections of Vehicle
 Garage raml dialect allows you to annotate your garage and vehicle types with additional metadata, to do it you may use annotations and annotation types properties defined in [Annotations definition specification](annotations.md).
 
 
-##Public fragments
+## Public fragments
 
 Garage specification declares following public fragments:
 
