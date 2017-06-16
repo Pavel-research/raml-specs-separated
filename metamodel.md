@@ -18,6 +18,8 @@ We are differentiating two forms of the fragment usage - internal fragment and r
 
 Your dialect may define a set of `top level` properties, with a domain referencing to `PublicFragment` this properties should be optional and may only be used when `Fragment` is used in the root role. 
 
+*Synonims*: sometimes we use term node to represent an object property with a particular structure.
+
 ## Fragment resolution
 When fragment is used in the root role. Content of the file defining a fragment instance may start from fragment identifier line, which consists of the text `#%(DIALECT SHORT NAME)` followed left-to-right by a single space, the version of the dialect, a single space, and one of the names of the `public fragments` defined in the language.
 
