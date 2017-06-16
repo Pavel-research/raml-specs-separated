@@ -1,4 +1,4 @@
-# RAML Vehicles Version 1.0: 
+# RAML Garage Version 1.0: 
 
 ## Abstract
 
@@ -8,9 +8,9 @@ Sometimes you need to describe vehicles in your garage.
 
 ### Summary
 
- * Alternative to describing vehicles in the natural language
+ * Alternative to describing garage in the natural language
  * "Feels like" describing stuff in yaml
- * Allows you to describe your vehicles fomally
+ * Allows you to describe your garage fomally
  * Concise syntax
  * Can be serialized as JSON and YAML
  * Can be inlined in JSON and YAML documents
@@ -51,8 +51,8 @@ Throughout this specification, **Markdown** means [GitHub-Flavored Markdown](htt
 
 - [Introduction](#introduction)
 - [Markup Language](#markup-language)
-- [Vehicle Types](#raml-data-types)
 - [Defining a garage](#garage)
+- [Vehicle Types](#raml-data-types)
 - [Modularization](#modularization)
 - [Annotations](#annotations)
 
@@ -68,7 +68,7 @@ This specification uses default [RAML dialects markup](markup.md)
 
 ## Defining a garage
 
-The following table enumerates the possible nodes at the root of a RAML document:
+The following table enumerates the possible nodes at the root of a Vehicles document:
 
 | Name  | Description |
 |:----------|:----------|
@@ -80,19 +80,18 @@ The following table enumerates the possible nodes at the root of a RAML document
 | (&lt;annotationName&gt;)? | [Annotations](#annotations) to be applied to this API. An annotation is a map having a key that begins with "(" and ends with ")" where the text enclosed in parentheses is the annotation name, and the value is an instance of that annotation.
 | uses? | Imported external [libraries](#libraries) for use within the garage.
 
-Vehicle specification language is a RAML dialect which may be used to specify `Vehicles`
+## Vehicle types
 
-Toys specification language defines following `Fragments`
+## Modularization
 
-`Library` - which may be used to declare library of vehicle kinds.
+### Structural includes
 
-Library fragment extends an abstract [library definition](libraries.md) and itroduces following declarations.
+Garage raml dialect supports using structural includes, syntax and semantic of them is defined in [Structural includes](includes.md).
 
-`vehicleModels` - map of model name to the `Vehicle` descriptions
+### Libraries
 
-`vehicleProducers` - map of vehicle producer name to `VehicleProducerDescription`
+Garage raml dialect supports Libraries [library definition](libraries.md). Libraries 
 
+## Annotations
 
-`Garage` - which describes a garage of vehicles.
-
-`Overlay` - which describes an overlay on the `Garage`.
+Garage raml dialect allows you to annotate your garage and vehicle types with additional metadata, to do it you may use annotations and annotation types properties defined in [Annotations definition specification](annotations.md).
