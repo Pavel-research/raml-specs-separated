@@ -1,7 +1,6 @@
 # RAML Specifications Separated
 
-This repository contains an attempt to extract few parts of RAML specifications in separate mini specifications and to make them available 
-for usage in describing new RAML dialects
+This repository contains an attempt to extract few parts of RAML specifications in separate mini specifications and to make them available as a building blocks for usage in describing new RAML dialects. 
 
 Concepts:
 
@@ -12,3 +11,6 @@ Concepts:
 
 Mental Framework:
 * [Metamodel](metamodel.md) - short description of mental framework which may be used to describe RAML dialect.
+
+Examples:
+ * [Vehicles](example.md) - example of the specifications language 
