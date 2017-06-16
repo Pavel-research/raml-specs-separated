@@ -1,6 +1,6 @@
 ### Libraries
 
-Libraries are used to combine any collection of declarations into modular, externalized, reusable groups. While libraries are intended to define common declarations in external documents, which are then included where needed, libraries can also be defined inline.
+Libraries are used to combine any collection of declarations into modular, externalized, reusable groups. While libraries are intended to define common declarations in external documents, which are then included where needed.
 
 The following table describes the nodes, which are optional, of a library node.
 
