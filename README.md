@@ -14,4 +14,4 @@ Mental Framework:
 * [Metamodel](metamodel.md) - short description of mental framework which may be used to describe RAML dialect.
 
 Examples:
- * [Vehicles](example.md) - example of the vehicle specifications language defined using this mental framework 
+ * [Garages](example.md) - example of the garage specifications language defined using this mental framework 
