@@ -120,23 +120,7 @@ RAML introduces the innovative concept of resource types and traits for characte
 
 ## Markup Language
 
-This specification uses [YAML 1.2](http://www.yaml.org/spec/1.2/spec.html) as its underlying format. YAML is a human-readable data format that aligns well with the design goals of this specification. As in YAML, all nodes such as keys, values, and tags, are case-sensitive.
-
-RAML API definitions are YAML 1.2-compliant documents that begin with a REQUIRED YAML-comment line that indicates the RAML version, as follows:
-
-```yaml
-#%RAML 1.0
-title: My API
-```
-
-The first line of a RAML API definition document MUST begin with the text _#%RAML_ followed by a single space followed by the text _1.0_ and nothing else before the end of the line. RAML fragment documents begin similarly with the RAML version comment and a [fragment identifier](#typed-fragments), but are not in themselves RAML API definition documents.
-
-The media type _application/raml+yaml_ and its associated file extension _.raml_ SHALL be used to designate files containing RAML API definitions, RAML fragments, and files that contain RAML markup. RAML is also capable of including documents of other media types, such as “application/schema+json” and “application/yaml”.
-
-To facilitate the automated processing of RAML documents, RAML imposes the following restrictions and requirements in addition to the core YAML 1.2 specification:
-
-* The first line of a RAML file consists of a YAML comment that specifies the RAML version. Therefore, RAML processors cannot completely ignore all YAML comments.
-* The order of some properties at certain levels within a RAML document is significant. Therefore, processors are expected to preserve this ordering.
+This specification uses default [RAML dialects markup](markup.md) 
 
 ## RAML Data Types
 
