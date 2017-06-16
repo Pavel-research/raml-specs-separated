@@ -8,3 +8,4 @@ Toys specification language defines following `Fragments`
 
 `ToyShop` - which describes a set of shops.
 
+`Overlay` - which describes an overlay on the `ToyShop`.
