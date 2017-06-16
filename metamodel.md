@@ -8,8 +8,8 @@ We are splitting properties in following conceptual classes:
  * `object properties`  - properties whose range is a type describing a `Fragment`.
  * `scalar properties`  - properties whose range is a scalar data type.
  
- property values may have annotations associated with it.
-
+values can have annotations associated with it. Annotations are not considered to be part of the value shape and are stored separately. **Describe what annotations are**
+ 
 We use RAML Types to define shape(structure) of the `Fragments`. Some of fragments and properties may have additional semantic validation associated with them. 
 
 `Named` or `public` fragments, some of the fragments defining the language can be used at the root of RAML document, this fragments should have a public name and their corresponding classes should inherit from a `PublicFragment` class.
@@ -36,5 +36,6 @@ We split parsing of the document in the following stages:
  * `meta compression` - at this moment scalars encoded as objects should be converted to plain scalars.
  * `extension` - if parsed fragment is a sub type of `ExtensionFragment` on this stage parser should transform object structure one more time, by merging it on top of extended document object structure.
  * `shape validation` - finally parser should perform structural and semantic validation of resulting object structure according to the rules of the fragment being parsed
+ * `annotation validation` - at this moment all annotations associated with all nodes and scalar property values are validated for their structural and semantical correctness
 
 
