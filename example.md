@@ -1,11 +1,11 @@
-## Toys specification language
+## Vehicle specification language
 
-Toys specification language is a RAML dialect which may be used to specify `Balloons`
+Vehicle specification language is a RAML dialect which may be used to specify `Vehicles`
 
 Toys specification language defines following `Fragments`
 
-`Library` - which may be used to declare library of toys makers
+`Library` - which may be used to declare library of vehicle kinds
 
-`ToyShop` - which describes a set of shops.
+`Garage` - which describes a garage of vehicles.
 
-`Overlay` - which describes an overlay on the `ToyShop`.
+`Overlay` - which describes an overlay on the `Garage`.
