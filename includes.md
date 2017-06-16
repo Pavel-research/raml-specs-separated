@@ -1,5 +1,7 @@
 ### Includes
 
+Includes operate on the structure resolution level. If your fragment supports includes just inherit it from 'HasIncludes' class. Only public fragments may support includes.
+
 Specification processors MUST support the OPTIONAL **!include** tag,
 which specifies the inclusion of external files into the  specification. Being a YAML tag, 
 the exclamation point ("!") prefix is required. In an  specification, the !include tag is located only in 
