@@ -23,7 +23,6 @@ annotationTypes:
         enum: [ low, medium, high ]
         required: true
       signature:
-        pattern: "\\d{3}-\\w{12}"
         required: true
 /groups:
   (experimental):
