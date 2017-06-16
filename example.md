@@ -77,7 +77,7 @@ The following table enumerates the possible nodes at the root of a Vehicles docu
 | location? | The locatoin of the garage, for example "Colorado". Its value is a string.
 | vehicleTypes? | Declarations of [vehicle types](#resource-types-and-traits) for use within the garage.
 | annotationTypes? | Declarations of [annotation types](annotations.md#declaring-annotation-types) for use by annotations.
-| (&lt;annotationName&gt;)? | [Annotations](#annotations) to be applied to this API. An annotation is a map having a key that begins with "(" and ends with ")" where the text enclosed in parentheses is the annotation name, and the value is an instance of that annotation.
+| (&lt;annotationName&gt;)? | [Annotations](annotationd.md#annotations) to be applied to this API. An annotation is a map having a key that begins with "(" and ends with ")" where the text enclosed in parentheses is the annotation name, and the value is an instance of that annotation.
 | uses? | Imported external [libraries](#libraries) for use within the garage.
 
 ## Vehicle types
