@@ -86,11 +86,11 @@ The following table enumerates the possible nodes at the root of a Vehicles docu
 
 ### Structural includes
 
-Garage raml dialect supports using structural includes, syntax and semantic of them is defined in [Structural includes](includes.md).
+Garage raml dialect supports using structural includes to modularize your garage specification, syntax and semantic of them is defined in [Structural includes](includes.md).
 
 ### Libraries
 
-Garage raml dialect supports Libraries [library definition](libraries.md). Libraries 
+Garage raml dialect supports Libraries to define reusable collections of Vehicle Types. Garage raml dialect uses following specification for declaring libraries [library definitions](libraries.md). 
 
 ## Annotations
 
