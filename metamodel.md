@@ -10,7 +10,7 @@ We are splitting properties in following conceptual classes:
  
 values can have annotations associated with it. annotations are not considered to be part of the value shape and are stored separately. **This is oftopic here, but is actually important**
  
-We use RAML Types to define shape(structure) of the `Fragments`. Some of fragments and properties may have additional semantic validation associated with them. 
+We use RAML Types to define shape(structure) of the `Fragments`. Some of fragments and properties may have additional semantic validation associated with them, in a few cases fragment also may have a rules for transforming object structure which should be executed on one structure refinement stages of the parsing
 
 `Named` or `public` fragments, some of the fragments defining the language can be used at the root of RAML document, this fragments should have a public name and their corresponding classes should inherit from a `PublicFragment` class.
 
