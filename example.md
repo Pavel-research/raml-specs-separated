@@ -37,17 +37,9 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 ## Definitions and Terminology
 
-### General
+Vehicle (from Latin: vehiculum[1]) is a mobile machine that transports people or cargo. Typical vehicles include wagons, bicycles, motor vehicles (motorcycles, trucks, buses), railed vehicles (trains, trams), watercraft (ships, boats), aircraft and spacecraft.[2]
 
-In this specification, **API definition** means an API using this specification.
-
-**RAML Specification** refers to this document.
-
-**REST** is used in the context of an API implemented using some or all of the principles of REST (Representational State Transfer), which was introduced and first defined in 2000 in Chapter 5, [REST](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm), of the doctoral dissertation *"Architectural Styles and the Design of Network-based Software Architecture"* by Roy Fielding.
-
-A **resource** is the conceptual mapping to an entity or set of entities.
-
-A trailing question mark, for example **description?**, indicates an optional property.
+Land vehicles are classified broadly by what is used to apply steering and drive forces against the ground: wheeled, tracked, railed or skied. ISO 3833-1977 is the standard, also internationally used in legislation, for road vehicles types, terms and definitions.[3]
 
 ### Markdown
 
@@ -61,21 +53,20 @@ Throughout this specification, **Markdown** means [GitHub-Flavored Markdown](htt
 - [Markup Language](#markup-language)
 - [Vehicle Types](#raml-data-types)
 - [Defining a garage](#garage)
-- [Modularization](#modularizatoin)
-- [References](#references)
+- [Modularization](#modularization)
+- [Annotations](#annotations)
 
 <!-- /TOC -->
 
 ## Introduction
 
-This specification describes the Raml Datatypes Language (RDL). RAML is a human- and machine-readable language for the definition of a RESTful application programming interface (API). RAML is designed to improve the specification of the API by providing a format that the API provider and API consumers can use as a mutual contract. RAML can, for example, facilitate providing user documentation and source code stubs for client and server implementations. Such provisions streamline and enhance the definition and development of interoperable applications that utilize RESTful APIs.
-
-RAML introduces the innovative concept of resource types and traits for characterizing and reusing patterns of resources and associated methods. Using resource types and traits minimizes the repetition in a RESTful API design and promotes consistency within and across APIs.
+This specification describes the Vehicle Specification Language (VSL). VSL is a human- and machine-readable language for the definition of your garage.
 
 ## Markup Language
 
 This specification uses default [RAML dialects markup](markup.md) 
-## Vehicle specification language
+
+## Vehicle types
 
 Vehicle specification language is a RAML dialect which may be used to specify `Vehicles`
 
