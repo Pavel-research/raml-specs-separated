@@ -96,19 +96,6 @@ Throughout this specification, **Markdown** means [GitHub-Flavored Markdown](htt
 		- [Single Example](#single-example)
 		- [Example of how to define example/examples in RAML](#example-of-how-to-define-exampleexamples-in-raml)
 	- [XML Serialization of Type Instances](#xml-serialization-of-type-instances)
-	- [Using Types in RAML](#using-types-in-raml)
-- [Annotations](#annotations)
-	- [Declaring Annotation Types](#declaring-annotation-types)
-	- [Applying Annotations](#applying-annotations)
-		- [Annotating Scalar-valued Nodes](#annotating-scalar-valued-nodes)
-		- [Annotation Targets](#annotation-targets)
-- [Modularization](#modularization)
-	- [Includes](#includes)
-		- [Typed Fragments](#typed-fragments)
-		- [Resolving Includes](#resolving-includes)
-	- [Libraries](#libraries)
-
-- [References](#references)
 
 <!-- /TOC -->
 
@@ -1357,20 +1344,3 @@ The example above can be serialized into the following XML:
   </addresses>
 </Person>
 ```
-
-### Using Types in RAML
-
-Types can be used in several positions:
-  * Body ( JSON )
-  * Body ( XML )
-  * Body ( Web Form )
-  * Headers
-  * Query Parameters
-  * URI Parameters
-
-Key points about serialization are:
-
-* Serialization rules depend on the type and the position in which the type is used.
-* A "string" is the default serialization target of a custom value type, which is an extended "value" of a built-in type.
-* An extended built-in type inherits its serialization target.
-
