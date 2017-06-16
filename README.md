@@ -8,7 +8,7 @@ Concepts:
 * [Libraries](libraries.md) - describes an abstract library fragment which may be used to bring library support into your dialect of RAML
 * [Overlays&Extensions](overlays.md) - describes extensions mechanism and additional semantic validation which is associated with abstract `Overlay` and `Extension` fragments.
 * [Data Types](types.md) - describes RAML type system, Type Declaration fragments.
-* [Annotations](annotations.md) - describe Annotations.
+* [Annotations](annotations.md) - describes annotations and annotations types properties.
 
 Mental Framework:
 * [Metamodel](metamodel.md) - short description of mental framework which may be used to describe RAML dialect.
