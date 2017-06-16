@@ -79,7 +79,7 @@ The following table enumerates the possible nodes at the root of the Garage:
 | vehicles? | Declarations of [vehicles](#vechicles) existing in the garage.
 
 | annotationTypes? | Declarations of [annotation types](annotations.md#declaring-annotation-types) for use by annotations.
-| (&lt;annotationName&gt;)? | [Annotations](annotationd.md#annotations) to be applied to this API. An annotation is a map having a key that begins with "(" and ends with ")" where the text enclosed in parentheses is the annotation name, and the value is an instance of that annotation.
+| (&lt;annotationName&gt;)? | [Annotations](annotations.md#annotations) to be applied to this API. An annotation is a map having a key that begins with "(" and ends with ")" where the text enclosed in parentheses is the annotation name, and the value is an instance of that annotation.
 | uses? | Imported external [libraries](#libraries) for use within the garage.
 
 ## Vehicle types
