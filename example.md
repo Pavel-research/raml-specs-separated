@@ -97,3 +97,16 @@ Garage raml dialect supports Libraries to define reusable collections of Vehicle
 ## Annotations
 
 Garage raml dialect allows you to annotate your garage and vehicle types with additional metadata, to do it you may use annotations and annotation types properties defined in [Annotations definition specification](annotations.md).
+
+
+##Public fragments
+
+Garage specification declares following public fragments:
+
+* Garage - for defining garage
+* Vehicle - for defining vehicle 
+* VehicleType - for defining vehicle type
+* Library - for defining library of vehicle types
+
+Garage fragment is a default fragment when parsing garage
+
