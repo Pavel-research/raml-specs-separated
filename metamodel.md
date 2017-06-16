@@ -8,7 +8,7 @@ We are splitting properties in following conceptual classes:
  * `object properties`  - properties whose range is a type describing a `Fragment`.
  * `scalar properties`  - properties whose range is a scalar data type.
  
-values can have annotations associated with it. Annotations are not considered to be part of the value shape and are stored separately. **Describe what annotations are**
+values can have annotations associated with it. annotations are not considered to be part of the value shape and are stored separately. **Describe what annotations are**
  
 We use RAML Types to define shape(structure) of the `Fragments`. Some of fragments and properties may have additional semantic validation associated with them. 
 
