@@ -126,25 +126,8 @@ The location within an API specification where annotations can be applied MUST b
 
 **Target Locations**
 
-|Target | Description |
-|:--------|:------------|
-| API | The root of a RAML document
-| DocumentationItem | An item in the collection of items that is the value of the root-level documentation node
-| Resource | A resource (relative URI) node, root-level or nested
-| Method | A method node
-| Response | A declaration of the responses node, whose key is an HTTP status code
-| RequestBody | The body node of a method
-| ResponseBody | The body node of a response
-| TypeDeclaration | A data type declaration (inline or in a global types collection), header declaration, query parameter declaration, URI parameter declaration, or a property within any of these declarations, where the type property can be used
-| Example | Either an example or examples node
-| ResourceType | A resource type node
-| Trait | A trait node
-| SecurityScheme | A security scheme declaration
-| SecuritySchemeSettings | The settings node of a security scheme declaration
-| AnnotationType | A declaration of the annotationTypes node, whose key is a name of an annotation type and whose value describes the annotation
-| Library | The root of a library
-| Overlay | The root of an overlay
-| Extension | The root of an extension
+Each RAML dialect language may have a set of allowed annotation target names associated with them, annotation target 
+should point to the fragment name or alternatively to the property declaration.
 
 The following example illustrates applying some restrictions on the allowed targets of annotations.
 
