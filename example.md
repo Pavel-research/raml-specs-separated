@@ -8,16 +8,15 @@ Sometimes you need to describe vehicles in your garage.
 
 ### Summary
 
- * Alternative to JSON Schema and XML Schema
- * "Feels like" object oriented programming
- * Allows you to test the validity of XML, YAML and JSON documents
+ * Alternative to describing vehicles in the natural language
+ * "Feels like" describing stuff in yaml
+ * Allows you to describe your vehicles fomally
  * Concise syntax
  * Can be serialized as JSON and YAML
  * Can be inlined in JSON and YAML documents
  * Designed with convenience in mind
 
-
-SDS lets you define Types ( aka Interfaces, Structs, Classes ) that describe the structure ( properties ) of your data. SDS-aware tooling can then use this information to verify that your data is structurally valid.
+Vehicles allows you to describe known vehicles kinds, and then describe vehicles in your garage using them.
 
 ## Status of this Document
 
