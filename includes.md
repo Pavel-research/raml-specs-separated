@@ -39,7 +39,7 @@ A file to be included MAY begin with a fragment identifier line, which consists 
 
 If a file begins with a specification fragment identifier line, 
 the contents of the file after removal of the RAML fragment identifier line 
-MUST be valid structurally according to the relevant RAML specification. 
+MUST be valid structurally according to the relevant RAML dialect specification. 
 For example, RAML specification file beginning with `#%RAML 1.0 Trait` must have the structure of a RAML trait declaration as defined in the [Resource Types and Traits](#resource-types-and-traits) section. 
 Including the file in a correct location for a trait declaration results in a valid RAML file.
 
