@@ -1,0 +1,22 @@
+#%RAML 1.0 Library
+types:
+  Action:
+    properties:
+      relativeUrl: string
+      method:
+        type: string
+        enum: [ put, post]
+  Object:
+    type: object
+    facets:
+      memberCollections?:
+        properties:
+          //: string
+      memberResources?:
+          //: string
+      actions?:
+          //: string | Action
+  Entry:
+    type: Object
+    facets:
+      baseUri?: string
