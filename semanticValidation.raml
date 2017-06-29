@@ -1,0 +1,15 @@
+#%RAML 1.0 Library
+uses:
+  n: namespaces.raml
+(n.namespace): http://raml.org/semanticConstraints  
+annotationTypes:
+  hasSemanticalConstraints:
+     type: string | nil
+     allowedTargets: TypeDeclaration
+     description: |
+       placing this annotation on the type declarations
+       has a meaning that this type has an additional semantical constraints
+       which can not be expressed in terms of RAML type system
+       value of the annotation should be a global url of the constraint,
+       if the value is ommitted then it is assumed that it's value is
+       equivalent to the url of the type.
