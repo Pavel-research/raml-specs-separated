@@ -3,7 +3,7 @@
 
 ## Abstract
 
-This is an example of how one may define a language by adding new a builtin types in RAML Types 
+This is an example of how one may define a language by adding new a builtin types in RAML Type System. 
 
 ## Introduction 
 
