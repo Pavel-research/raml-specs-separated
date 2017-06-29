@@ -1,0 +1,29 @@
+#%RAML 1.0 Library
+uses:
+  ao: activeObjects.raml
+types:
+  Task:
+    type: ao.Object
+    properties:
+      title: string
+      done: boolean
+
+  Person:
+    type: ao.Object
+    properties:
+      name: string
+      lastName: string
+    memberCollections:
+      tasks: Task
+  Team:
+    type: ao.Object
+    properties:
+      name: string
+      lastName: string
+    memberCollections:
+      people: Person
+  TeamApi:
+    type: ao.Entry
+    baseUri: http://teams.org
+    memberCollections:
+      teams: Team
