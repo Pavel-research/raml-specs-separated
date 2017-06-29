@@ -1,22 +1,36 @@
 #%RAML 1.0 Library
+uses:
+  n: namespaces.raml
+  d: dialectTypes.raml
+(n.namespace): http://raml.org/vocubalaries/activeObjects.raml
 types:
+  Parameter:
+    properties:
+     location?:
+       type: string
+       enum: [path,query,header,body]
+     type: d.RAMLTypeExpression
   Action:
     properties:
-      relativeUrl: string
-      method:
+      relativeUrl?: d.relativeUrl
+      method?:
         type: string
         enum: [ put, post]
+      parameters:
+        properties:
+          //: Parameter
+
   Object:
     type: object
     facets:
       memberCollections?:
         properties:
-          //: string
+          //: d.RAMLTypeName
       memberResources?:
-          //: string
+          //: d.RAMLTypeName
       actions?:
           //: string | Action
   Entry:
     type: Object
     facets:
-      baseUri?: string
+      baseUri?: d.absoluteUrl
