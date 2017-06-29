@@ -39,7 +39,7 @@ types:
     memberCollections:
       teams: Team
 ```
-alternatively same structure may be defined as a valid RAML 1.0 library [Example](activeObjectsExample.raml) 
+alternatively same structure may be defined as a valid RAML 1.0 library [Example](exampleActiveObjects.raml) 
 
 ##Fragment Name
 
