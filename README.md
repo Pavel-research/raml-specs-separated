@@ -15,3 +15,4 @@ Mental Framework:
 
 Examples:
  * [Garages](example.md) - example of the garage specifications language defined using this mental framework 
+ * [REST minilang](collectionsExample.md) - example of how you may define RAML Dialect by using only RAML terms.
