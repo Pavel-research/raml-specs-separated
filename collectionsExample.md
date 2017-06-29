@@ -41,7 +41,7 @@ types:
 ```
 alternatively same structure may be defined as a valid RAML 1.0 library [Example](exampleActiveObjects.raml) 
 
-##Fragment Name
+## Fragment Name
 
 This specification uses ActiveObjects as a fragment name
 
