@@ -1,22 +1,14 @@
 #%RAML 1.0 Library
 usage: |
-  This library defines set of scalar types which are expected to be used in annotation
+  This library defines set of scalar types which are expected to be used in annotations or in RAML dialect
   type declarations. It is expected that RAML processing tools knows and respect them when perform library expansion.
+uses:
+  n: namespaces.raml
+  semanticValidation: semanticValidation.raml
+(n.namespace): http//raml.org/vocubalaries/dialectTypes.raml
 types:
-  RAMLLocalExpression:
-    type: string
-    description: |
-      This type allows to describe an expression on an instance of the type. Expression language is javascript
-    example: this.x+this.y
-  RAMLResponseExpression:
-    type: string
-    description: |
-      This type allows to describe a reference to the element of response. It supports chaining of property accesses.
-  RAMLRequestExpression:
-    type: string
-    description: |
-      This type allows to describe a reference to the element of request. It supports chaining of property accesses.
   RAMLReferenceExpression:
+    (semanticValidation.hasSemanticalConstraints):
     type: string
     description: |
       This type allows to describe a reference to the property of RAML type. For example
@@ -28,8 +20,30 @@ types:
       Chaining: Repository.owner.login
       Qualified: github.Repository.owner.login
   RAMLTypeName:
+    (semanticValidation.hasSemanticalConstraints):
     description: name of the RAML type, if the type comes from library name should be prefixed with library namespace.
     type: string
     examples:
       SimpleName: Person
       QualifiedName: teams.Person
+  RAMLTypeExpression:
+    (semanticValidation.hasSemanticalConstraints):
+    description: valid type expression in terms of RAML types.
+    type: string
+    examples:
+      simple: string
+      array: Person[]
+      unionType: teams.Person| Man
+  relativeUrl:
+     type: string
+     (semanticValidation.hasSemanticalConstraints):
+     description: valid relative uri
+  absoluteUrl:
+     (semanticValidation.hasSemanticalConstraints):
+     description: valid absolute url
+  responseCode:
+     (semanticValidation.hasSemanticalConstraints):
+     description: valid response code
+  mediaType:
+     (semanticValidation.hasSemanticalConstraints):
+     description: valid media type name
