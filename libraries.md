@@ -103,3 +103,8 @@ get:
         application/json:
           type: files.file-type.File # invalid - no chaining allowed
 ```
+
+
+### Using of libraries between dialect.
+
+You may use libraries defined in one dialect in another dialect. In this case library should be validated by the parser of the dialect it was defined in. However any references to the library elements should be a valid references from the referencer point of view.
